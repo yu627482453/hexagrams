@@ -24,6 +24,8 @@
         <module>hexagrams-sentinel-starter</module>
         <module>hexagrams-redis-starter</module>
         <module>hexagrams-swagger-starter</module>
+        <module>hexagrams-webmvc-starter</module>
+        <module>hexagrams-webflux-starter</module>
 
     </modules>
 
