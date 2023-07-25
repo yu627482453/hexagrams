@@ -65,6 +65,14 @@
     <dependencyManagement>
         <dependencies>
 
+            <!-- 本项目的模块 -->
+
+            <dependency>
+                <groupId>cn.bipher</groupId>
+                <artifactId>hexagrams-common-core</artifactId>
+                <version>${base.project.version}</version>
+            </dependency>
+
             <!-- SpringCloud 微服务 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
