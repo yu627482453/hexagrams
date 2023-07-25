@@ -9,16 +9,13 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>hexagrams-common-db</artifactId>
-    <packaging>jar</packaging>
-    <description>公共支撑相关组件</description>
+    <artifactId>hexagrams-common-support</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>cn.bipher</groupId>
@@ -28,10 +25,13 @@
             <groupId>cn.bipher</groupId>
             <artifactId>hexagrams-common-utils</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-extension</artifactId>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
         </dependency>
     </dependencies>
 

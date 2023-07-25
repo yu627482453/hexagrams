@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.bipher.hexagrams.redis.RedisAutoConfigure,\
+  cn.bipher.hexagrams.redis.lock.RedissonDistributedLock,\
+  cn.bipher.hexagrams.redis.template.RedisRepository

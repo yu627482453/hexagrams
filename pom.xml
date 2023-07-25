@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -59,6 +59,7 @@
         <transmittable-thread-local.version>2.13.2</transmittable-thread-local.version>
         <jackson.version>2.14.0</jackson.version>
         <protobuf.version>3.21.9</protobuf.version>
+        <aspectj.version>1.9.7</aspectj.version>
     </properties>
 
     <!-- 依赖声明 -->
@@ -70,6 +71,12 @@
             <dependency>
                 <groupId>cn.bipher</groupId>
                 <artifactId>hexagrams-common-core</artifactId>
+                <version>${base.project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.bipher</groupId>
+                <artifactId>hexagrams-common-support</artifactId>
                 <version>${base.project.version}</version>
             </dependency>
 
@@ -297,6 +304,12 @@
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger2</artifactId>
                 <version>${swagger.fox.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectj.version}</version>
             </dependency>
 
         </dependencies>

@@ -15,7 +15,7 @@
     <modules>
         <module>hexagrams-common-core</module>
         <module>hexagrams-common-utils</module>
-        <module>hexagrams-common-db</module>
+        <module>hexagrams-common-support</module>
     </modules>
 
     <properties>
