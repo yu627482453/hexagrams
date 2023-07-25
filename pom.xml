@@ -73,6 +73,12 @@
                 <version>${base.project.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>cn.bipher</groupId>
+                <artifactId>hexagrams-common-utils</artifactId>
+                <version>${base.project.version}</version>
+            </dependency>
+
             <!-- SpringCloud 微服务 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
