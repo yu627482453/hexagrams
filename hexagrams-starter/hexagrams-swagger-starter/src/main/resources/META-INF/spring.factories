@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.bipher.hexagrams.swagger2.SwaggerAutoConfiguration,\
+  cn.bipher.hexagrams.swagger2.SwaggerBeanPostProcessor,\
+  cn.bipher.hexagrams.swagger2.SwaggerWebConfiguration
