@@ -61,6 +61,7 @@
         <protobuf.version>3.21.9</protobuf.version>
         <aspectj.version>1.9.7</aspectj.version>
         <seata.version>1.6.1</seata.version>
+        <xxl-job.version>2.3.1</xxl-job.version>
     </properties>
 
     <!-- 依赖声明 -->
@@ -317,6 +318,13 @@
                 <groupId>io.seata</groupId>
                 <artifactId>seata-serializer-kryo</artifactId>
                 <version>${seata.version}</version>
+            </dependency>
+
+            <!--xxl job-->
+            <dependency>
+                <groupId>com.xuxueli</groupId>
+                <artifactId>xxl-job-core</artifactId>
+                <version>${xxl-job.version}</version>
             </dependency>
 
         </dependencies>
