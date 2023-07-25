@@ -10,6 +10,14 @@
     <description>微服务 母工程</description>
     <modules>
 
+        <module>hexagrams-common</module>
+        <module>hexagrams-gateway</module>
+        <module>hexagrams-demo</module>
+        <module>hexagrams-ex</module>
+        <module>hexagrams-support</module>
+        <module>hexagrams-support-api</module>
+        <module>hexagrams-biz</module>
+        <module>hexagrams-thirdparty</module>
     </modules>
     <packaging>pom</packaging>
 
