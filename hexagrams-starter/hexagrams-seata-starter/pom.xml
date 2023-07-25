@@ -17,4 +17,21 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <!-- seata-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
+        </dependency>
+        <!--  seata kryo 序列化-->
+        <dependency>
+            <groupId>io.seata</groupId>
+            <artifactId>seata-serializer-kryo</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.bipher</groupId>
+            <artifactId>hexagrams-common-core</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>

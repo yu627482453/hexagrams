@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.AutoConfiguration.imports=\
+  cn.bipher.hexagrams.seata.SeataAutoConfiguration
