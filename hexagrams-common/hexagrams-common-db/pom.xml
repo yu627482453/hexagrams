@@ -9,7 +9,7 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>hexagrams-common-support</artifactId>
+    <artifactId>hexagrams-common-db</artifactId>
     <packaging>jar</packaging>
     <description>公共支撑相关组件</description>
 

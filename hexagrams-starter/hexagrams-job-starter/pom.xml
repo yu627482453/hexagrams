@@ -5,18 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>cn.bipher</groupId>
-        <artifactId>hexagrams</artifactId>
+        <artifactId>hexagrams-starter</artifactId>
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>hexagrams-common</artifactId>
-    <packaging>pom</packaging>
-    <description>公共模块层</description>
-    <modules>
-        <module>hexagrams-common-core</module>
-        <module>hexagrams-common-utils</module>
-        <module>hexagrams-common-db</module>
-    </modules>
+    <artifactId>hexagrams-job-starter</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

@@ -9,7 +9,27 @@
         <version>1.0.0</version>
     </parent>
 
+    <modules>
+        <module>hexagrams-datasource-starter</module>
+        <module>hexagrams-feign-starter</module>
+        <module>hexagrams-job-starter</module>
+        <module>hexagrams-log-starter</module>
+        <module>hexagrams-mybatis-starter</module>
+        <module>hexagrams-oss-starter</module>
+        <module>hexagrams-seata-starter</module>
+        <module>hexagrams-security-starter</module>
+        <module>hexagrams-xss-starter</module>
+        <module>hexagrams-elasticsearch-starter</module>
+        <module>hexagrams-loadbanlancer-starter</module>
+        <module>hexagrams-sentinel-starter</module>
+        <module>hexagrams-redis-starter</module>
+        <module>hexagrams-swagger-starter</module>
+
+    </modules>
+
     <artifactId>hexagrams-starter</artifactId>
+    <packaging>pom</packaging>
+    <description>快速启动器</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
