@@ -18,6 +18,7 @@
         <module>hexagrams-support-api</module>
         <module>hexagrams-biz</module>
         <module>hexagrams-thirdparty</module>
+        <module>hexagrams-starter</module>
     </modules>
     <packaging>pom</packaging>
 
