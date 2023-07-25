@@ -1,0 +1,132 @@
+#设定注册服务前缀
+spring:
+  service:
+    prefix: hexagrams
+  datasource:
+    druid:
+      initial-size: 5
+      max-active: 40
+      min-idle: 5
+      max-wait: 6000
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      #Oracle需要打开注释
+      #validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        #login-username: admin
+        #login-password: admin
+      filter:
+        stat:
+          log-slow-sql: true
+          slow-sql-millis: 3000
+          merge-sql: false
+          #          db-type: oracle
+          enabled: true
+        wall:
+          config:
+            multi-statement-allow: true
+  cache:
+    type: REDIS
+    #可选，全局缓存时间，单位为秒。不配置默认为14天
+    ttl: 1209600
+  redis:
+    appl-name: ${spring.application.name}
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    redisson:
+      config:
+        #公司目前用redis单点，所以只配置这一块
+        singleServerConfig:
+          idleConnectionTimeout: 10000
+          connectTimeout: 10000
+          timeout: 3000
+          retryAttempts: 3
+          retryInterval: 1500
+          subscriptionsPerConnection: 5
+          #redisson客户端名称，需要自己修改
+          clientName: ${spring.application.name}-redisson-client
+          subscriptionConnectionMinimumIdleSize: 1
+          subscriptionConnectionPoolSize: 50
+          connectionMinimumIdleSize: 3
+          connectionPoolSize: 64
+          dnsMonitoringInterval: 5000
+        threads: 0
+        nettyThreads: 0
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+    #设置空如何序列化
+    #defaultPropertyInclusion: NON_EMPTY
+    serialization:
+      #取消默认转换timestamps形式
+      WRITE_DATES_AS_TIMESTAMPS: false
+      #忽略空Bean转json的错误
+      FAIL_ON_EMPTY_BEANS: false
+    deserialization:
+      USE_BIG_DECIMAL_FOR_FLOATS: true
+      #忽略在json字符串中存在，但是在java对象中不存在对应属性的情况。防止错误
+      FAIL_ON_UNKNOWN_PROPERTIES: false
+    parser:
+      #允许出现特殊字符和转义符
+      allow_unquoted_control_chars: true
+      #允许出现单引号
+      allow_single_quotes: true
+# rest proxy
+http:
+  proxy:
+    enabled: false
+    host: 127.0.0.1
+    port: 8888
+    scheme: http
+
+management:
+  endpoint:
+    #部署到K8S内，开启访问liveness和readiness接口
+    health:
+      probes:
+        enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}-${spring.profiles.active}
+    export:
+      prometheus:
+        enabled: true
+        pushgateway:
+          #启用推送
+          enabled: false
+          #pushgateway地址
+          baseUrl: 127.0.0.1:9091
+          #推送周期
+          pushRate: 15s
+          #job定义名
+          job: ${spring.application.name}-${spring.profiles.active}
+          grouping-key:
+            instance: ${spring.cloud.client.ip-address}:${server.port}
+  endpoints:
+    web:
+      exposure:
+        include: info,health
+
+hrfax:
+  http:
+    connect-timeout: 60000
+    connection-request-timeout: 10000
+    socket-timeout: 60000
+    max-total: 500
+    default-max-per-route: 100
+    #参数打印长度，默认5000个字符
+    param-length: 5000
+    #响应结果打印长度，默认5000个字符
+    response-length: 5000
+
+arthas:
+  agent-id: ${spring.service.prefix}-${spring.application.name}-${spring.profiles.active}-${spring.cloud.client.ip-address}-${server.port}
+  tunnel-server: ws://127.0.0.1:7777/ws
