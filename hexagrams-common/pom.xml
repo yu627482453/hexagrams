@@ -12,6 +12,9 @@
     <artifactId>hexagrams-common</artifactId>
     <packaging>pom</packaging>
     <description>公共模块层</description>
+    <modules>
+        <module>hexagrams-common-core</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
