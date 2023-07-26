@@ -61,7 +61,7 @@ public class ApiResponse<T> implements IBaseCodeType, IBaseRes {
      * 通用失败响应
      * @return {@link ApiResponse}
      */
-    public static ApiResponse<Object> fail(String msg) {
+    public static <T>ApiResponse<T> fail(String msg) {
         return new ApiResponse<>(BaseErrorCodeEnum.INTERNAL_SERVER_ERROR.getCode(),
                 msg, null);
     }

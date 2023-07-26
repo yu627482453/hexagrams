@@ -11,7 +11,6 @@
     <modules>
 
         <module>hexagrams-common</module>
-        <module>hexagrams-gateway</module>
         <module>hexagrams-demo</module>
         <module>hexagrams-ex</module>
         <module>hexagrams-support</module>
@@ -19,6 +18,7 @@
         <module>hexagrams-biz</module>
         <module>hexagrams-thirdparty</module>
         <module>hexagrams-starter</module>
+        <module>hexagrams-security</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -64,6 +64,8 @@
         <xxl-job.version>2.3.1</xxl-job.version>
         <knife4j.version>2.0.5</knife4j.version>
         <jsoup.version>1.15.3</jsoup.version>
+        <social.security.version>1.1.6.RELEASE</social.security.version>
+        <spring-authorization-server.version>0.4.2</spring-authorization-server.version>
     </properties>
 
     <!-- 依赖声明 -->
@@ -93,6 +95,17 @@
             <dependency>
                 <groupId>cn.bipher</groupId>
                 <artifactId>hexagrams-redis-starter</artifactId>
+                <version>${base.project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.bipher</groupId>
+                <artifactId>hexagrams-security-core</artifactId>
+                <version>${base.project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.bipher</groupId>
+                <artifactId>hexagrams-security-oauth2-core</artifactId>
                 <version>${base.project.version}</version>
             </dependency>
 
@@ -346,7 +359,17 @@
                 <artifactId>jsoup</artifactId>
                 <version>${jsoup.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.springframework.social</groupId>
+                <artifactId>spring-social-security</artifactId>
+                <version>${social.security.version}</version>
+            </dependency>
+            <!-- sas 授权服务器 -->
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-oauth2-authorization-server</artifactId>
+                <version>${spring-authorization-server.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
