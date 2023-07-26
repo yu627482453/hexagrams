@@ -10,11 +10,31 @@
     </parent>
 
     <artifactId>hexagrams-mybatis-starter</artifactId>
+    <description>数据库通用组件</description>
+    <dependencies>
+        <dependency>
+            <groupId>cn.bipher</groupId>
+            <artifactId>hexagrams-common-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.bipher</groupId>
+            <artifactId>hexagrams-common-utils</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <!-- druid 官方 starter -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+        </dependency>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.bipher.hexagrams.db.config.TenantAutoConfigure,\
+cn.bipher.hexagrams.db.config.MybatisPlusAutoConfigure
