@@ -20,8 +20,6 @@
         <module>hexagrams-security-starter</module>
         <module>hexagrams-xss-starter</module>
         <module>hexagrams-elasticsearch-starter</module>
-        <module>hexagrams-loadbanlancer-starter</module>
-        <module>hexagrams-sentinel-starter</module>
         <module>hexagrams-redis-starter</module>
         <module>hexagrams-swagger-starter</module>
         <module>hexagrams-webmvc-starter</module>
