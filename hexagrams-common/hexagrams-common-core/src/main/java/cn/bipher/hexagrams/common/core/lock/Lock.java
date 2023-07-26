@@ -1,4 +1,4 @@
-package cn.bipher.hexagrams.common.supoort.lock;
+package cn.bipher.hexagrams.common.core.lock;
 
 import java.lang.annotation.*;
 import java.util.concurrent.TimeUnit;

@@ -1,4 +1,4 @@
-package cn.bipher.hexagrams.common.supoort.lock;
+package cn.bipher.hexagrams.common.core.lock;
 
 import cn.bipher.hexagrams.common.core.exception.BaseException;
 

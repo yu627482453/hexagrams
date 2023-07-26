@@ -1,11 +1,13 @@
-package cn.bipher.hexagrams.common.supoort.lock;
+package cn.bipher.hexagrams.common.core.constant;
 
 /**
+ * 锁相关常量
+ *
  * @author Bipher
  * @version 1
  * @date 2023/7/25 22:36
  */
-public class LockConstant {
+public final class LockConstant {
 
     private LockConstant() {
 
