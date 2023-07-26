@@ -1,3 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  cn.bipher.hexagrams.common.utils.autoconfigure.JacksonUtilAutoConfiguration,\
   cn.bipher.hexagrams.common.utils.autoconfigure.SpringUtilAutoConfiguration

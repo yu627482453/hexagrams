@@ -26,6 +26,7 @@
         <module>hexagrams-swagger-starter</module>
         <module>hexagrams-webmvc-starter</module>
         <module>hexagrams-webflux-starter</module>
+        <module>hexagrams-jackson-starter</module>
 
     </modules>
 

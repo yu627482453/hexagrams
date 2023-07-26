@@ -79,13 +79,13 @@
 
             <dependency>
                 <groupId>cn.bipher</groupId>
-                <artifactId>hexagrams-common-support</artifactId>
+                <artifactId>hexagrams-common-utils</artifactId>
                 <version>${base.project.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>cn.bipher</groupId>
-                <artifactId>hexagrams-common-utils</artifactId>
+                <artifactId>hexagrams-common-support</artifactId>
                 <version>${base.project.version}</version>
             </dependency>
 
