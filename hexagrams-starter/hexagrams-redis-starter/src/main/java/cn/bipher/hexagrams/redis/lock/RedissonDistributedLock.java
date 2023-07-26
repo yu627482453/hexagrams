@@ -1,9 +1,9 @@
 package cn.bipher.hexagrams.redis.lock;
 
-import cn.bipher.hexagrams.common.supoort.lock.DistributedLock;
-import cn.bipher.hexagrams.common.supoort.lock.LockConstant;
-import cn.bipher.hexagrams.common.supoort.lock.LockException;
-import cn.bipher.hexagrams.common.supoort.lock.ZLock;
+import cn.bipher.hexagrams.common.core.lock.DistributedLock;
+import cn.bipher.hexagrams.common.core.constant.LockConstant;
+import cn.bipher.hexagrams.common.core.lock.LockException;
+import cn.bipher.hexagrams.common.core.lock.ZLock;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
