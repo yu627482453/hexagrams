@@ -1,0 +1,3 @@
+cn.bipher.hexagrams.feign.FeignAutoConfiguration
+cn.bipher.hexagrams.feign.sentinel.SentinelAutoConfiguration
+cn.bipher.hexagrams.feign.sentinel.handle.GlobalBizExceptionHandler
