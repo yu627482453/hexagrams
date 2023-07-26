@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-@ConfigurationProperties("swagger")
+@ConfigurationProperties("hexagrams.swagger")
 public class SwaggerProperties {
     /**
      * 是否开启swagger

@@ -12,7 +12,7 @@ import org.springframework.boot.context.properties.NestedConfigurationProperty;
  * @date 2023/7/25 23:05
  */
 @Data
-@ConfigurationProperties(prefix = "xxl.job")
+@ConfigurationProperties(prefix = "hexagrams.xxl.job")
 public class XxlJobProperties {
 
 	@NestedConfigurationProperty
