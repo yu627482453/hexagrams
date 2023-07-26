@@ -1,5 +1,6 @@
 package cn.bipher.hexagrams.common.utils.util;
 
+import cn.hutool.core.util.StrUtil;
 import lombok.experimental.UtilityClass;
 
 /**
@@ -10,5 +11,5 @@ import lombok.experimental.UtilityClass;
  * @date 2022/12/30 13:46
  */
 @UtilityClass
-public class StringUtil extends cn.hutool.core.text.CharSequenceUtil {
+public class StringUtil extends StrUtil {
 }

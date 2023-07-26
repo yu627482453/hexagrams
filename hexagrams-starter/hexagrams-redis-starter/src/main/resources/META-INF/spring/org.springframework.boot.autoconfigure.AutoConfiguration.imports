@@ -1,0 +1,3 @@
+cn.bipher.hexagrams.redis.autoconfigure.HexagramsRedisAutoConfiguration
+cn.bipher.hexagrams.redis.autoconfigure.MessageEventListenerAutoConfiguration
+cn.bipher.hexagrams.redis.autoconfigure.RedisKeyEventAutoConfiguration

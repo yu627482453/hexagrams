@@ -70,16 +70,16 @@ public class SystemUtil {
 		return new File(System.getProperty("java.io.tmpdir"));
 	}
 
-	public static File tmpDirBallcat() {
-		return new File(System.getProperty("java.io.tmpdir"), "ballcat");
+	public static File tmpDirHexagrams() {
+		return new File(System.getProperty("java.io.tmpdir"), "hexagrams");
 	}
 
 	public static File homeDir() {
 		return new File(System.getProperty("user.home"));
 	}
 
-	public static File homeDirBallcat() {
-		return new File(System.getProperty("user.home"), ".ballcat");
+	public static File homeDirHexagrams() {
+		return new File(System.getProperty("user.home"), ".hexagrams");
 	}
 
 	public static File workDir() {

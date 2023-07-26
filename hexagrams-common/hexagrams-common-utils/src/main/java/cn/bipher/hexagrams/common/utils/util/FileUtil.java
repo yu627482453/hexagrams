@@ -30,7 +30,7 @@ public class FileUtil {
 	/**
 	 * 系统的临时文件夹
 	 */
-	private static File tempDir = SystemUtil.tmpDirBallcat();
+	private static File tempDir = SystemUtil.tmpDirHexagrams();
 
 	/**
 	 * 更新临时文件路径
@@ -147,7 +147,7 @@ public class FileUtil {
 	 * 创建临时文件
 	 */
 	public static File createTemp() throws IOException {
-		return createTemp("ballcat");
+		return createTemp("hexagrams");
 	}
 
 	/**

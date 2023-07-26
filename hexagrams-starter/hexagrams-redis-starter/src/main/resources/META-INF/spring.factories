@@ -1,4 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  cn.bipher.hexagrams.redis.RedisAutoConfigure,\
-  cn.bipher.hexagrams.redis.lock.RedissonDistributedLock,\
-  cn.bipher.hexagrams.redis.template.RedisRepository
+cn.bipher.hexagrams.redis.autoconfigure.HexagramsRedisAutoConfiguration,\
+cn.bipher.hexagrams.redis.autoconfigure.MessageEventListenerAutoConfiguration,\
+cn.bipher.hexagrams.redis.autoconfigure.RedisKeyEventAutoConfiguration
