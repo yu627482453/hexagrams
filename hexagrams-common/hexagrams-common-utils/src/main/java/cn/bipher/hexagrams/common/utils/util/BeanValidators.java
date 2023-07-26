@@ -5,6 +5,7 @@ import cn.bipher.hexagrams.common.core.code.BaseErrorCodeEnum;
 import cn.bipher.hexagrams.common.core.exception.ExceptionFactory;
 import cn.bipher.hexagrams.common.core.exception.ValidateException;
 import cn.bipher.hexagrams.common.core.validate.ValidateGroup;
+import lombok.experimental.UtilityClass;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
@@ -18,13 +19,10 @@ import java.util.Set;
  * @version 1
  * @date 2022/12/30 13:57
  */
+@UtilityClass
 public class BeanValidators {
 
     private static final Validator VALIDATOR = Validation.buildDefaultValidatorFactory().getValidator();
-
-    private BeanValidators() {
-
-    }
 
     /**
      * 按组进行校验

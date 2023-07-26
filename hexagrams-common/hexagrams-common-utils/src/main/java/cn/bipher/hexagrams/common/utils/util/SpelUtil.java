@@ -1,5 +1,6 @@
 package cn.bipher.hexagrams.common.utils.util;
 
+import lombok.experimental.UtilityClass;
 import org.springframework.context.expression.MethodBasedEvaluationContext;
 import org.springframework.core.LocalVariableTableParameterNameDiscoverer;
 import org.springframework.expression.ExpressionParser;
@@ -15,6 +16,7 @@ import java.lang.reflect.Method;
  * @version 1
  * @date 2022/12/30 13:46
  */
+@UtilityClass
 public class SpelUtil {
 
     /**

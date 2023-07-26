@@ -5,7 +5,9 @@ import cn.bipher.hexagrams.common.core.spring.BeanPostProcessor;
 import org.springframework.stereotype.Component;
 
 /**
- * @author lingting 2022/10/22 15:10
+ * @author Bipher
+ * @version 1
+ * @date 2023/7/26 10:54
  */
 @Component
 public class ContextComposeBeanPostProcessor implements BeanPostProcessor {

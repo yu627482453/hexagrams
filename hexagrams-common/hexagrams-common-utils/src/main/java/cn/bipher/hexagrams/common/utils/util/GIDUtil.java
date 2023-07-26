@@ -1,6 +1,7 @@
 package cn.bipher.hexagrams.common.utils.util;
 
 import cn.bipher.hexagrams.common.utils.contract.SeqNoEnumInterface;
+import lombok.experimental.UtilityClass;
 
 import java.util.UUID;
 
@@ -10,10 +11,8 @@ import java.util.UUID;
  * @version 1
  * @date 2023/6/26 23:52
  */
+@UtilityClass
 public class GIDUtil {
-
-    private GIDUtil() {
-    }
 
     /**
      * 获取UUID

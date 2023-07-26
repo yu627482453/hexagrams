@@ -2,6 +2,7 @@ package cn.bipher.hexagrams.common.utils.util;
 
 import cn.bipher.hexagrams.common.core.code.IBaseCodeType;
 import cn.bipher.hexagrams.common.core.exception.ExceptionFactory;
+import lombok.experimental.UtilityClass;
 
 import java.util.Map;
 
@@ -13,11 +14,8 @@ import java.util.Map;
  * @version 1
  * @date 2023/2/20 23:50
  */
+@UtilityClass
 public class Assert {
-
-    private Assert() {
-
-    }
 
     /**
      * 断言是否为真，如果为 {@code false} 抛出给定的异常<br>

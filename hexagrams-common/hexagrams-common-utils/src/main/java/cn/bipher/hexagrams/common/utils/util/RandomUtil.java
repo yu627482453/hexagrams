@@ -1,5 +1,7 @@
 package cn.bipher.hexagrams.common.utils.util;
 
+import lombok.experimental.UtilityClass;
+
 /**
  * 随机工具类
  *
@@ -7,5 +9,6 @@ package cn.bipher.hexagrams.common.utils.util;
  * @version 1
  * @date 2022/12/30 13:52
  */
+@UtilityClass
 public class RandomUtil extends cn.hutool.core.util.RandomUtil {
 }
